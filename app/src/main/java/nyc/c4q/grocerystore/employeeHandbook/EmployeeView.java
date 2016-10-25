@@ -15,6 +15,7 @@ import nyc.c4q.grocerystore.employeeHandbook.employees.Hyunjoo;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Derek;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Nesada;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Rafael;
+import nyc.c4q.grocerystore.employeeHandbook.employees.Shannon;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Wesnie;
 import nyc.c4q.grocerystore.employeeHandbook.employees.Jordan;
 import nyc.c4q.grocerystore.employeeHandbook.employees.JoseV;
@@ -45,6 +46,9 @@ public class EmployeeView extends AppCompatActivity {
             }
 
             switch (employee) {
+                case "Shannon":
+                    showShannon();
+                    break;
                 case "Lily":
                     showHuiLily();
                     break;
@@ -93,6 +97,13 @@ public class EmployeeView extends AppCompatActivity {
             }
 
         }
+    }
+
+    private void showShannon(){
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.employee_profile,new Shannon());
+        fragmentTransaction.commit();
     }
     private void showNesada(){
         FragmentManager fragmentManager = getFragmentManager();

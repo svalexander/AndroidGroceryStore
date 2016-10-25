@@ -13,21 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/ramen1" />
+        android:src="@drawable/ramen1"
+        android:layout_below="@+id/photo_image_view2" />
 
-    <ImageView
-        android:id="@+id/photo_image_view2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/profile1" />
-    <ImageView
-        android:id="@+id/photo_image_view3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/dumplings1" />
     <TextView
         android:id="@+id/text_name"
         android:layout_width="wrap_content"
@@ -37,7 +25,7 @@
         android:textStyle="bold"
         android:textSize="40sp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/photo_image_view2"/>
+        android:layout_below="@+id/photo_image_view2" />
     <TextView
         android:id="@+id/text_nickname"
         android:layout_width="wrap_content"
@@ -58,4 +46,13 @@
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/text_nickname"/>
+
+    <ImageView
+        android:id="@+id/photo_image_view2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/shannon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
